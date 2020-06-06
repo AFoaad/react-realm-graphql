@@ -1,10 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import ApolloClient from 'apollo-boost';
+import {ApolloProvider} from 'react-apollo'
+const client = new ApolloClient({
+  uri: 'https://api-eu-central-1.graphcms.com/v2/ckb1fr2fw0dqb01yyfhdw213w/master'
+})
 function App() {
   return (
-    <div className="App">
+    <ApolloProvider client={client}>
+      <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -20,6 +25,7 @@ function App() {
         </a>
       </header>
     </div>
+    </ApolloProvider>
   );
 }
 
