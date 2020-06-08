@@ -16,6 +16,7 @@
     "react-apollo": "^3.1.5",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "realm": "^6.0.2",
     "typescript": "~3.7.2"
   },
   "scripts": {
