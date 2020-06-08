@@ -92,5 +92,3 @@ export const queryAllTodoLists = () => new Promise((resolve, reject) => {
     }).catch(err => reject(err));
 });
 
-export default new Realm(databaseOptions);
-
